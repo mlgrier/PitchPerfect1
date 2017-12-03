@@ -118,11 +118,11 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d2W-zI-I5E" userLabel="stopButton">
-                                <rect key="frame" x="155.5" y="301.5" width="64" height="64"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="73e-a4-Bs1" userLabel="stopButton">
+                                <rect key="frame" x="155.5" y="591.5" width="64" height="64"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="64" id="Gcq-hl-T7p"/>
-                                    <constraint firstAttribute="width" constant="64" id="xVw-qr-dkC"/>
+                                    <constraint firstAttribute="width" constant="64" id="dZK-iI-czz"/>
+                                    <constraint firstAttribute="height" constant="64" id="mCM-5n-RH8"/>
                                 </constraints>
                                 <state key="normal" image="Stop"/>
                             </button>
@@ -131,10 +131,10 @@
                         <constraints>
                             <constraint firstItem="14m-Ig-FYP" firstAttribute="bottom" secondItem="1Ge-Zq-JC5" secondAttribute="bottom" id="0U5-C1-ehR"/>
                             <constraint firstItem="1Ge-Zq-JC5" firstAttribute="leading" secondItem="14m-Ig-FYP" secondAttribute="leading" id="1v6-RU-3Ti"/>
-                            <constraint firstItem="d2W-zI-I5E" firstAttribute="centerX" secondItem="1Ge-Zq-JC5" secondAttribute="centerX" id="OHb-NT-VUI"/>
                             <constraint firstItem="1Ge-Zq-JC5" firstAttribute="top" secondItem="14m-Ig-FYP" secondAttribute="top" id="W3f-Ms-aR4"/>
+                            <constraint firstItem="73e-a4-Bs1" firstAttribute="centerX" secondItem="1Ge-Zq-JC5" secondAttribute="centerX" id="iAQ-PH-bPr"/>
+                            <constraint firstItem="73e-a4-Bs1" firstAttribute="top" secondItem="1Ge-Zq-JC5" secondAttribute="bottom" constant="-75.5" id="k4i-Vh-1Ie"/>
                             <constraint firstItem="14m-Ig-FYP" firstAttribute="trailing" secondItem="1Ge-Zq-JC5" secondAttribute="trailing" id="tQl-aV-BY7"/>
-                            <constraint firstItem="d2W-zI-I5E" firstAttribute="centerY" secondItem="2Zv-yO-der" secondAttribute="centerY" id="wOM-Iw-w2Y"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="14m-Ig-FYP"/>
                     </view>
