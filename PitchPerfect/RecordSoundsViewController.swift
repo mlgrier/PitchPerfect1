@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  RecordSoundsViewController.swift
 //  PitchPerfect
 //
 //  Created by Marco Grier on 12/3/17.
@@ -7,8 +7,11 @@
 //
 
 import UIKit
+import AVFoundation
 
-class ViewController: UIViewController {
+class RecordSoundsViewController: UIViewController {
+    
+    var audioRecorder: AVAudioRecorder!
 
     @IBOutlet weak var recordLabel: UILabel!
     @IBOutlet weak var recordButton: UIButton!
