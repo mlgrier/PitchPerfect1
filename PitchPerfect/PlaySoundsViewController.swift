@@ -25,6 +25,12 @@ class PlaySoundsViewController: UIViewController {
     var audioPlayerNode: AVAudioPlayerNode!
     var stopTimer: Timer!
     
+    let slowRate: Float = 0.5
+    let fastRate: Float = 1.5
+    let chipmunkRate: Float = 1000
+    let vaderRate: Float = -1000
+    
+    
     enum ButtonType: Int {
         case slow = 0, fast, chipmunk, vader, echo, reverb
     }
@@ -32,13 +38,13 @@ class PlaySoundsViewController: UIViewController {
     @IBAction func playSoundForButton(_ sender: UIButton) {
         switch(ButtonType(rawValue: sender.tag)!) {
         case .slow:
-            playSound(rate: 0.5)
+            playSound(rate: slowRate)
         case .fast:
-            playSound(rate: 1.5)
+            playSound(rate: fastRate)
         case .chipmunk:
-            playSound(pitch: 1000)
+            playSound(pitch: chipmunkRate)
         case .vader:
-            playSound(pitch: -1000)
+            playSound(pitch: vaderRate)
         case .echo:
             playSound(echo: true)
         case .reverb:
